@@ -1,0 +1,18 @@
+package Assignment_03;
+
+public class problem_01_MainClass {
+
+	public static void main(String[] args) 
+	{
+		problem_01_Employee Employee=new problem_01_Employee();
+		Employee.setename(1,"Aseem Chakrabarthy",100000,"Software Engineer","Nothing");
+		System.out.println("eid : "+Employee.getsid());
+		System.out.println("ename : "+Employee.getsname());
+		System.out.println("esal : "+Employee.getssal());
+		System.out.println("edept : "+Employee.getsdept());
+		System.out.println("eadd : "+Employee.getsadd());
+		
+
+	}
+
+}

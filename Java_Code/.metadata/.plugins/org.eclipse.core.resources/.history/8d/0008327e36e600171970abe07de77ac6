@@ -1,0 +1,35 @@
+package Assignment_05_student;
+
+public class GradeDemo extends AvgDemo 
+{
+
+	public void GradeDispaly()
+	  {
+		  
+		  super.AverageCalculation();
+		  if(Average>=80) 
+		  {
+			  grade="A+";
+		  }
+		  else if(Average>=70 && Average<=79)
+		  {
+			  grade="A";
+		  }
+		  else if(Average>=60 && Average<=69)
+		  {
+			  grade="A-";
+		  }
+		  else if(Average>=50 && Average<=59)
+		  {
+			  grade="B";
+		  }
+		  else
+		  {
+			  grade="F";
+		  }
+		  
+		  System.out.println("It's GradeDemo Class.Second student name is :  "+arName[1]);
+	  }
+	
+	
+}

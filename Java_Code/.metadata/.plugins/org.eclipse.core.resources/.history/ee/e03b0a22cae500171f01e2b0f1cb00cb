@@ -1,0 +1,21 @@
+package Assignment_03;
+
+public class problem_01_Employee extends problem_01_Address
+{
+
+	private String ename;
+	private int esal;
+	private String edept;
+	private String eadd;
+	
+	public void setename(String name)
+	{
+		this.ename=name;
+	}
+	public String getsname()
+	{
+		return ename;
+	}
+	
+	
+}

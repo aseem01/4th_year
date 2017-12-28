@@ -1,0 +1,13 @@
+import Assignment_05_student.OutputDemo;
+
+public class assignment_05_MainClass {
+
+	public static void main(String[] args) 
+	{
+		
+     OutputDemo output=new OutputDemo();
+     output.display();
+		
+	}
+
+}

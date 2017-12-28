@@ -1,0 +1,23 @@
+package button;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Java_button_ActionListener {
+
+	public static void main(String[] args) 
+	{
+		JFrame f=new JFrame("Java Button");
+		f.setSize(400, 400);
+	    //f.setLayout(null);
+	    //f.setVisible(true);
+	    
+	    JButton b=new JButton("Click");
+	    f.add(b);
+	    b.setBounds(150, 100, 100, 30);
+	    f.setLayout(null);
+	    f.setVisible(true);
+
+	}
+
+}

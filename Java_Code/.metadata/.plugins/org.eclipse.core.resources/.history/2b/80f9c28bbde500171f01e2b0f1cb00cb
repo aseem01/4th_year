@@ -1,0 +1,29 @@
+package Assignment_03;
+
+import java.util.Scanner;
+
+/*
+ * Author :Aseem Chakrabarthy
+ * Date: 21-12-2017
+ * Algorithm:brute force
+ */
+
+public class problem_06 {
+
+	public static void main(String[] args) 
+	{
+		Scanner src=new Scanner(System.in);
+		System.out.print("Enter a number : ");
+		int n=src.nextInt();
+		System.out.println("Reverse of the number : ");
+		while(n!=0)
+		{
+			System.out.print(n%10);
+			n/=10;
+		}
+		src.close();
+		System.out.println();
+
+	}
+
+}

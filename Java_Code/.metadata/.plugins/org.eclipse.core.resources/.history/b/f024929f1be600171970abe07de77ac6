@@ -1,0 +1,10 @@
+package Assignment_03_info;
+
+public class TotalDemo extends InputDemo 
+{
+   public void display()
+   {
+	   sum+=n;
+	   //super.marks();
+   }
+}

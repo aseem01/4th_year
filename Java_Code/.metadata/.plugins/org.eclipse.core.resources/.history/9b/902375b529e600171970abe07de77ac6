@@ -1,0 +1,9 @@
+package Assignment_05_student;
+
+public class OutputDemo extends GradeDemo{
+	 public void display()
+	  {
+		  super.GradeDispaly();
+		  System.out.println("Your grade is : "+grade);
+	  }
+}

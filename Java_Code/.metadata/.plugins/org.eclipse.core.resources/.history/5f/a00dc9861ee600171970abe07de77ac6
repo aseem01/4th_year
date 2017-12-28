@@ -1,0 +1,9 @@
+package Assignment_04_info;
+
+public class ResultDemo extends GradeDemo 
+{
+  public void display()
+  {
+	  System.out.println("Your grade is : "+grade);
+  }
+}

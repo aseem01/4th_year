@@ -1,0 +1,48 @@
+package Assignment_03;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/*
+ * Author :Aseem Chakrabarthy
+ * Date: 21-12-2017
+ * Algorithm:brute force
+ */
+
+
+public class problem_03 {
+
+	public static void main(String[] args) 
+	{
+		/*Scanner src=new Scanner(System.in);
+		long sum=0;
+		String input="";
+		System.out.println("Please enter your input : ");
+		while(src.nextLine()!=null)
+		{
+			int n=src.nextInt();
+			sum+=n;
+		}
+		System.out.println("Summation of your input is : "+sum);
+		src.close();*/
+		
+		
+		Scanner s = new Scanner(System.in);
+		//ArrayList<Integer> list = new ArrayList<>();
+		long sum=0;
+		System.out.println("Please enter your input : ");
+		while(s.hasNextInt()){
+
+		   // list.add(s.nextInt());
+			sum+=s.nextInt();
+
+		}
+		
+		System.out.println("sum : "+sum);
+		
+
+	}
+
+}

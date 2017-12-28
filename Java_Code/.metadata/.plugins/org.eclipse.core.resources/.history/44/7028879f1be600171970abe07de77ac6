@@ -1,0 +1,10 @@
+package Assignment_03_info;
+
+public class AvgDemo extends TotalDemo
+{
+
+	public void AverageCalculation()
+	{
+		Average=sum/10;
+	}
+}

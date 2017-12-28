@@ -1,0 +1,9 @@
+package Assignment_03;
+
+public class problem_01_Address
+{
+
+	private String Street;
+	private String  City;
+	private String Country;
+}

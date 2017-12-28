@@ -77,73 +77,58 @@ long long gcd(long long a, long long b)
 }
 
 //||--------------------------->||Main_Code_Start_From_Here||<---------------------------------||
-struct cmp
-{
-    bool operator()(const string& first, const string& second)
-    {
-        return first.size() < second.size();
-    }
-};
+string s[70010],ss,sss;
 int main()
 {
     //freopen("a.in", "r", stdin);
     //freopen("a.out", "w", stdout);
     int n;
-    string s[100010],ss,sss;
     while(cin>>n)
     {
         for(int i=0; i<n; i++) cin>>s[i];
-        ss="";
-        vector<string>vvv;
-        map<string,int>mp,mp1;
+        map<string,int>mp;
+        set<string>ans;
+        set<string>:: iterator it;
 
         for(int i=0; i<n; i++)
         {
+            //ans.clear();
             for(int j=0; j<s[i].size(); j++)
             {
-                ss="";
-                for(int x=j; x<s[i].size(); x++)
+                for(int x=0; x<s[i].size()-j; x++)
                 {
-                    sss=s[i];
-                    ss+=sss[x];
-                    if(mp1[ss]==0)
-                    {
-                    mp[ss]++;
-                    mp1[ss]++;
-                    }
+                    ss=s[i].substr(x,j+1);
+                    ans.insert(ss);
                 }
             }
-            mp1.clear();
+
+
+            for(it=ans.begin();it!=ans.end();it++) mp[*it]++;
+            ans.clear();
+
+
         }
 
-        ss="";
+
+        int flag;
         for(int i=0; i<n; i++)
         {
 
-
             for(int j=0; j<s[i].size(); j++)
             {
-                ss="";
-                for(int k=j; k<s[i].size(); k++)
+                flag=0;
+                for(int k=0; k<s[i].size()-j; k++)
                 {
-                    sss=s[i];
-                    ss+=sss[k];
-                    vvv.push_back(ss);
+                    ss=s[i].substr(k,j+1);
+                    if(mp[ss]==1)
+                    {
+                        flag=1;
+                        break;
+                    }
                 }
+                if(flag) break;
             }
-            cmp c;
-            sort(vvv.begin(), vvv.end(), c);
-            for(int j=0; j<vvv.size(); j++)
-            {
-                if(mp[vvv[j]]==1)
-                {
-                    mp[vvv[j]]++;
-                    cout<<vvv[j]<<endl;
-                    break;
-                }
-            }
-            vvv.clear();
-
+            cout<<ss<<endl;
 
         }
 

@@ -1,0 +1,11 @@
+package Assignment_04_info;
+
+public class AvgDemo extends TotalDemo
+{
+
+	public void AverageCalculation()
+	{
+		super.display();
+		Average=sum/10;
+	}
+}

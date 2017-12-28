@@ -1,0 +1,11 @@
+package Assignment_03;
+
+public class problem_04_MainClass {
+
+	public static void main(String[] args)
+{
+		game play=new game();
+
+	}
+
+}

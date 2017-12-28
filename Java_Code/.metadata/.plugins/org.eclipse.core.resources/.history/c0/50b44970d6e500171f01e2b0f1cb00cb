@@ -1,0 +1,15 @@
+package Assignment_03_info;
+
+import java.util.Scanner;
+
+public class MainDemo {
+
+	public static void main(String[] args) 
+	{
+		 
+		ResultDemo resultdemo=new ResultDemo();
+		input.marks();
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package Assignment_05_student;
+
+public class AvgDemo extends TotalDemo
+{
+	
+	public void AverageCalculation()
+	{
+		super.display();
+		Average=sum/5;
+		System.out.println("It's Average Class.Third student name is :  "+arName[2]);
+	}
+
+}

@@ -1,0 +1,19 @@
+package Assignment_03_info;
+
+import java.util.Scanner;
+
+public class MainDemo {
+
+	public static void main(String[] args) 
+	{
+		InputDemo input=new InputDemo();
+		Scanner src=new Scanner(System.in);
+		TotalDemo calculation=new TotalDemo();
+		AvgDemo average=new AvgDemo();
+		GradeDemo Grade=new GradeDemo();
+		ResultDemo resultdemo=new ResultDemo();
+		input.marks();
+
+	}
+
+}
