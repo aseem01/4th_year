@@ -1,9 +1,4 @@
 <html>
-<head>
-
-<title></title>
-
-</head>
 <body>
 <h1>Competitive Programming</h1>
 <h3>Popular Site For Learning</h3>
@@ -24,7 +19,7 @@
 
 8.<a href="http://hukush-pakush.com/"/>ফাহিম ভাই এর পাইথন</a>
 
-9.<a href="http://www.progkriya.org/"/>PROGক্রিয়া</>
+9.<a href="http://www.progkriya.org/"/>PROGক্রিয়া</a>
 
 10.<a href="https://community.topcoder.com/tc?module=Static&d1=tutorials&d2=alg_index">TopCoder টিউটোরিয়াল</a>
 
